@@ -10,7 +10,7 @@ body {
 body > div:last-of-type {
   font-size: x-small;
   position: absolute;
-  bottom: 4rem;
+  bottom: 2rem;
 }
 
 body > div:last-of-type a {
