@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+}
+
+body > div:last-of-type {
+  font-size: x-small;
+  position: absolute;
+  bottom: 4rem;
+}
+
+body > div:last-of-type a {
+  color: #0070f4;
+  font-weight: bold;
+}
+
+.containr {
+  gap: 2rem;
+  width: 80% !important;
+  max-width: 700px !important;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+  cursor: pointer;
+  color: white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-inline: 1rem;
+}
+
+input {
+  outline: none;
+}
+
+.word {
+  font-size: small;
+  font-weight: bold;
+}
+
+.theme {
+  cursor: pointer;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+.message {
+  height: 40vh;
+  padding: 1.25rem 1.75rem;
+}
+
+body > label {
+  width: 30px;
+  height: 30px;
+}
+
+body > label img {
+  position: absolute;
+  transform: translate(24%, 21%);
+}
+
+/* dark theme */
+
+body.dark {
+  background-image: url(images/bg-gradient.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.button.dark {
+  background: linear-gradient(180deg, #0070f4 0%, #012651 100%);
+}
+
+.theme.dark {
+  background-color: transparent;
+  border: 1px solid rgb(139, 137, 137);
+  box-shadow: inset 0px 1px 4px rgba(243, 3, 3, 0.25);
+}
+
+input.dark,
+.message.dark {
+  background-color: #282828;
+  border: none;
+}
+
+.containr.dark {
+  border: none;
+}
+
+/* for small screens */
+@media (max-width: 600px) {
+  .message {
+    height: 30vh;
+    padding: 1rem;
+  }
+
+  ::placeholder {
+    font-size: x-small;
+  }
+
+  .message p {
+    font-size: 12px;
+  }
+
+  h1 + p {
+    font-size: medium;
+  }
+}
