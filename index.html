@@ -9,29 +9,25 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="main.js"></script>
   </head>
-  <body class="min-h-screen grid place-items-center relative">
+  <body class="min-h-screen flex flex-col items-center justify-center relative">
     <input type="checkbox" name="check" id="check" class="absolute top-0 left-0 opacity-0" />
     <label for="check" class="theme absolute top-4 right-4 md:right-8 lg:top-8 lg:right-12 bg-white">
       <img src="images/theme.svg" alt="dark toggle" />
     </label>
-
-    <div class="containr p-4 lg:p-12 rounded full">
+    <div class="container p-4 rounded-md flex flex-col shadow-lg w-[80%] mx-auto">
       <div class="text-center mb-8">
         <h1 class="logo text-xl font-bold">Dictionary App</h1>
         <p class="">Hi 🖐, welcome to my dictonary app.</p>
       </div>
-
       <div class="relative mb-8">
-        <input type="text" class="main border border-slate-400 text-sm rounded full focus:ring-blue-500 focus:border-blue-500 block w-full p-2" placeholder="Whatcha' lookin' for?" />
-        <button class="text-center text-xs button absolute rounded-tr rounded-br full bg-blue-600 md:px-8">search</button>
+        <input type="text" class="border border-slate-400 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2" placeholder="Whatcha' lookin' for?" />
+        <button class="text-center text-xs button absolute rounded-tr rounded-br full bg-blue-600">search</button>
       </div>
-
-      <div class="w-full border border-slate-400 rounded full message overflow-y-visible md:overflow-hidden">
+      <div class="w-full border border-slate-400 rounded message overflow-y-visible md:overflow-hidden">
         <p>Message</p>
       </div>
     </div>
-
-    <div>
+    <div class="text-center mt-8">
       Designed by
       <a href="https://x.com/judhi_xo_" target="_blank">Design Stunna</a>
       &Chi;
